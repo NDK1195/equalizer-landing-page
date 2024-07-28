@@ -1113,6 +1113,11 @@ html {
     margin-right: auto;
   }
 
+  .xl\:mx-\[22px\]{
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+
   .xl\:mb-10{
     margin-bottom: 2.5rem;
   }
@@ -1123,6 +1128,14 @@ html {
 
   .xl\:mt-0{
     margin-top: 0px;
+  }
+
+  .xl\:mb-\[39px\]{
+    margin-bottom: 39px;
+  }
+
+  .xl\:mb-\[46px\]{
+    margin-bottom: 46px;
   }
 
   .xl\:min-w-\[1110px\]{
@@ -1191,6 +1204,22 @@ html {
     padding-left: 165px;
   }
 
+  .xl\:pt-\[58px\]{
+    padding-top: 58px;
+  }
+
+  .xl\:pl-\[54px\]{
+    padding-left: 54px;
+  }
+
+  .xl\:pr-\[59px\]{
+    padding-right: 59px;
+  }
+
+  .xl\:pb-\[48px\]{
+    padding-bottom: 48px;
+  }
+
   .xl\:text-\[88px\]{
     font-size: 88px;
   }
@@ -1198,6 +1227,10 @@ html {
   .xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-\[40px\]{
+    font-size: 40px;
   }
 
   .xl\:leading-\[34px\]{
