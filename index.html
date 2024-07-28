@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,15 +13,142 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Equalizer landing page</title>
   </head>
-  <body>
-    We make your music sound extraordinary. A system audio equalizer
-    specifically designed for Android and iOS. Freely tune the way your music
-    sounds with a professional grade parametric EQ & volume mixer. Control bass,
-    mids, treble, gain control, reverb, and more! Premium EQ Get expert-level
-    control with a robust equalizer, volume mixer, and spatial audio. Take your
-    listening experience to a whole new level and access all our incredible
-    features! $4 / month iOS Download Android Download All rights reserved ©
-    Equalizer 2021 Have any problems? Contact us via social media or email us at
-    equalizer@example.com
+  <body class="flex min-h-screen flex-col bg-FCFAF9 text-191826">
+    <div
+      class="invisible absolute right-0 md:visible md:-right-9 md:-top-[30px] md:max-w-[266.667px] xl:-top-[45px] xl:right-0 xl:max-w-[312px]"
+    >
+      <img
+        src="./assets/bg-pattern-1.svg"
+        alt="background pattern"
+        class="w-full"
+      />
+    </div>
+
+    <header
+      class="bg-main-mobile bg-[position:0_-250px] bg-no-repeat px-6 pb-[166px] pt-10 md:bg-main-tablet md:bg-[position:-400px_-250px] md:pb-[249px] md:pl-10 md:pr-0 md:pt-[62px] xl:bg-main-desktop xl:bg-[position:-300px_-300px] xl:pb-[321px] xl:pl-[165px]"
+    >
+      <h1 class="mb-16 md:mb-[95px]">
+        <img src="./assets/logo.svg" alt="logo" class="h-8 max-w-[146.093px]" />
+      </h1>
+      <h2
+        class="mb-5 text-[40px] font-bold leading-[48px] tracking-[-0.455px] md:mb-7 md:max-w-[520px] md:text-[64px] md:leading-[64px] md:tracking-[-0.727px] xl:mb-10 xl:max-w-[1015px] xl:text-[88px] xl:leading-[88px]"
+      >
+        We make your music sound extraordinary.
+      </h2>
+      <p
+        class="max-w-[514px] text-base leading-[26px] md:text-lg md:leading-7 xl:max-w-[825px] xl:text-xl xl:leading-[34px]"
+      >
+        A system audio equalizer specifically designed for Android and iOS.
+        Freely tune the way your music sounds with a professional grade
+        parametric EQ & volume mixer. Control bass, mids, treble, gain control,
+        reverb, and more!
+      </p>
+    </header>
+
+    <main
+      class="relative mb-[390px] md:mb-[183px] md:px-10 xl:mx-auto xl:mb-[202px] xl:min-w-[1110px] xl:px-0"
+    >
+      <div class="relative z-0 h-[600px] rounded-xl bg-191826">
+        <img
+          src="./assets/bg-pattern-2.svg"
+          alt="background pattern 2"
+          class="absolute left-1/2 top-0 z-10 max-w-[280px] -translate-x-1/2 md:-top-8 md:left-[53%] lg:left-[336px] lg:-translate-x-0 xl:max-w-[312px]"
+        />
+        <img
+          src="./assets/illustration-app.png"
+          alt=""
+          class="absolute -top-[100px] left-1/2 z-20 max-w-[208.972px] -translate-x-1/2 md:-top-[138px] md:left-16 md:max-w-[270.206px] md:-translate-x-0 lg:-top-[213px] lg:left-[102px] xl:max-w-[312px]"
+        />
+      </div>
+
+      <div
+        class="md:max-h- absolute top-[380px] z-30 rounded-xl bg-FA7453 px-9 py-12 text-FCFAF9 md:left-[279px] md:top-[150px] md:max-w-[399px] lg:left-[569px] lg:top-[90px] xl:max-w-[446px]"
+      >
+        <h3 class="mb-3 text-[32px] font-bold leading-10">Premium EQ</h3>
+        <p class="mb-9 text-lg leading-7">
+          Get expert-level control with a robust equalizer, volume mixer, and
+          spatial audio. Take your listening experience to a whole new level and
+          access all our incredible features!
+        </p>
+        <p class="mb-8 flex items-center gap-4">
+          <span class="text-[65px] font-bold leading-[52px]">$4</span>
+          <span class="text-xl leading-8 tracking-[-0.2px]">/ month</span>
+        </p>
+
+        <div class="flex flex-col gap-4">
+          <button
+            class="flex w-full items-center justify-center gap-2 rounded-xl bg-191826 py-5 transition-colors hover:bg-66E2DC"
+          >
+            <img src="./assets/icon-apple.svg" alt="icon apple" />
+            <span class="text-lg font-bold leading-8 tracking-[-0.18px]"
+              >iOS Download</span
+            >
+          </button>
+
+          <button
+            class="flex w-full items-center justify-center gap-2 rounded-xl bg-FCFAF9 py-5 transition-colors hover:bg-FFB964"
+          >
+            <img src="./assets/icon-android.svg" alt="icon android" />
+            <span
+              class="text-lg font-bold leading-8 tracking-[-0.18px] text-191826"
+              >Android Download</span
+            >
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="mt-auto flex flex-col gap-16 px-6 pb-20 md:flex-row md:justify-between md:px-8 md:pb-[85px] xl:mx-auto xl:min-w-[1110px] xl:px-0 xl:pb-[91px]"
+    >
+      <div class="flex flex-col gap-8 xl:flex-row xl:gap-[138px]">
+        <img src="./assets/logo.svg" alt="logo" class="h-8 max-w-[146.093px]" />
+        <p class="max-w-[366px] text-base leading-[26px]">
+          All rights reserved © Equalizer 2021 Have any problems? Contact us
+          via social media or email us at <br class="block md:hidden" />
+          <span class="font-bold">equalizer@example.com</span>
+        </p>
+      </div>
+      <div class="flex items-center gap-3 md:mt-[60px] xl:mt-0">
+        <svg
+          width="20"
+          height="20"
+          xmlns="http://www.w3.org/2000/svg"
+          class="cursor-pointer"
+        >
+          <path
+            d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0Z"
+            fill="#191826"
+            class="cursor-pointer transition-colors hover:fill-FA7453"
+          />
+        </svg>
+
+        <svg
+          width="20"
+          height="20"
+          xmlns="http://www.w3.org/2000/svg"
+          class="cursor-pointer"
+        >
+          <path
+            d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058ZM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0Zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27Zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666Zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"
+            fill="#191826"
+            class="cursor-pointer transition-colors hover:fill-FA7453"
+          />
+        </svg>
+
+        <svg
+          width="20"
+          height="17"
+          xmlns="http://www.w3.org/2000/svg"
+          class="cursor-pointer"
+        >
+          <path
+            d="M20 2.172a8.192 8.192 0 0 1-2.357.646 4.11 4.11 0 0 0 1.805-2.27 8.22 8.22 0 0 1-2.606.996A4.096 4.096 0 0 0 13.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 0 1 1.392 1a4.109 4.109 0 0 0 1.27 5.478 4.086 4.086 0 0 1-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 0 1-1.853.07 4.106 4.106 0 0 0 3.833 2.849A8.25 8.25 0 0 1 0 14.658a11.616 11.616 0 0 0 6.29 1.843c7.618 0 11.923-6.434 11.663-12.205A8.354 8.354 0 0 0 20 2.172Z"
+            fill="#191826"
+            class="cursor-pointer transition-colors hover:fill-FA7453"
+          />
+        </svg>
+      </div>
+    </footer>
   </body>
 </html>
